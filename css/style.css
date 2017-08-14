@@ -5,6 +5,11 @@
   font-family: Heroic;
 }
 
+@font-face {
+  src: url(../fonts/adellesans.ttf);
+  font-family: Adelle-sans;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +18,11 @@
 
 body {
   background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-logo svg {
@@ -30,7 +40,10 @@ body {
   margin-right: 15px;
 }
 
-.header-wrapper,
+.header-wrapper {
+  display: inline-block;
+  width: 100%;
+}
 .header-content {
   display: inline-block;
   width: 100%;
@@ -71,6 +84,7 @@ body {
   padding: 5px 0px;
   font-family: Heroic, sans-serif;
   font-size: 1.3em;
+  cursor: pointer;
 }
 
 .nav-bar li:first-child {
@@ -91,4 +105,37 @@ body {
   height: 0;
   border: 4px solid transparent;
   border-top: 4px solid #e5127d;
+}
+
+.nav-section-coll {
+  display: inline-block;
+  width: 100%;
+  height: calc(100% - 80px);
+  position: relative;
+}
+
+.nav-section {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.nav-section .nav-section-ul li {
+  font-family: Adelle-sans;
+  font-weight: bold;
+  font-size: 0.6em;
+  padding: 15px;
+  border-bottom: 1px solid #6a6a6a;
+}
+
+.nav-section .nav-section-ul li:last-child {
+  color: #e5127d;
+}
+
+#nav-section-more .nav-section-ul li:last-child {
+  color: inherit;
 }
