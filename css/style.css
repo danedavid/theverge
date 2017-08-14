@@ -1,9 +1,12 @@
 /* stylesheet for index.html */
 
+<<<<<<< c6f1ff706aaabf782e0222bbacaee04268cd9d7a
 @font-face {
   src: url(../fonts/Heroic.ttf);
   font-family: Heroic;
 }
+=======
+>>>>>>> gradient added
 
 @font-face {
   src: url(../fonts/adellesans.ttf);
@@ -69,6 +72,7 @@ a {
   width: 100%;
   border-bottom: 1px solid #333333;
 }
+
 
 .nav-bar .nav-ul {
   display: inline-block;
@@ -138,4 +142,54 @@ a {
 
 #nav-section-more .nav-section-ul li:last-child {
   color: inherit;
+}
+
+/* styling for main items */
+
+.main-items-container {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(90deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
+  padding: 1px;
+}
+
+.top-story {
+  display: inline-block;
+  height: 28vh;
+}
+
+.top-story .story-img {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #000000;
+  padding: 5px;
+  float: left;
+}
+
+.top-story .story-img img {
+  height: 100%;
+}
+
+.top-story .story-text {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #000000;
+  font-family: Adelle-sans, sans-serif;
+  padding: 5px;
+}
+
+.story-header {
+  color: #eeeeee;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.story-footer {
+  color: #6a6a6a;
+}
+
+.story-author {
+  color: #e5127d;
 }
