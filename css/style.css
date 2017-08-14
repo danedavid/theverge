@@ -156,6 +156,7 @@ a {
 .top-story {
   display: inline-block;
   height: 28vh;
+  width: 100%;
 }
 
 .top-story .story-img {
