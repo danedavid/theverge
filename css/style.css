@@ -108,7 +108,7 @@ a {
 }
 
 .nav-section-coll {
-  display: inline-block;
+  display: none;
   width: 100%;
   height: calc(100% - 80px);
   position: relative;
