@@ -214,3 +214,66 @@ a {
   color: #e5127d;
   cursor: pointer;
 }
+
+/* styling for footer */
+
+.footer {
+  padding: 10px 0px;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-logo,
+.quick-links,
+.footer-status,
+.footer-status p,
+.vox-logo,
+.vox-links {
+  margin: 10px auto;
+}
+
+.footer a {
+  color: #e5127d;
+}
+
+.footer-logo {
+  width: 250px;
+
+}
+
+.quick-links {
+  max-width: 95vw;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.quick-links li {
+  display: inline-block;
+}
+
+.quick-links li::after {
+  content: '\2022';
+  color: #ffffff;
+  margin: 0 8px;
+}
+
+.quick-links li:last-child::after {
+  content: none;
+}
+
+.footer-status {
+  max-width: 90vw;
+}
+
+.vox-logo {
+  width: 150px;
+}
+
+.vox-links {
+  max-width: 90vw;
+}
