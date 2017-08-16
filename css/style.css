@@ -214,3 +214,40 @@ a {
   color: #e5127d;
   cursor: pointer;
 }
+
+/* styling for footer */
+
+.footer {
+  padding: 10px 0px;
+}
+
+.footer-logo {
+  width: 250px;
+  margin: 10px auto;
+}
+
+.quick-links {
+  color: #e5127d;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 2vw;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.quick-links li {
+  display: inline-block;
+}
+
+.quick-links li::before {
+  content: '\2022';
+  color: #ffffff;
+  margin: 0 8px;
+}
+
+.quick-links li:first-child::before {
+  content: none;
+}
