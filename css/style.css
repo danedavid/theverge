@@ -22,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  cursor: pointer;
 }
 
 .header-logo svg {
@@ -211,7 +211,6 @@ a {
 
 .story-author {
   color: #e5127d;
-  cursor: pointer;
 }
 
 /* styling for sub-stories */
@@ -251,10 +250,6 @@ a {
   font-size: 12px;
 }
 
-.sub-story a {
-  color: #e5127d;
-}
-
 /* styling for footer */
 
 .footer {
@@ -280,7 +275,6 @@ a {
 
 .footer-logo {
   width: 250px;
-
 }
 
 .quick-links {
