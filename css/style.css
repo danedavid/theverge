@@ -262,7 +262,7 @@ a {
   display: inline-block;
   position: relative;
   width: 100%;
-  padding: 20px 10px;
+  padding: 15px 10px;
 }
 
 .gb-logo {
@@ -295,6 +295,30 @@ a {
   margin-left: 5px;
   border: 5px solid transparent;
   border-left: 5px solid #e5127d;
+}
+
+.gb-line {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gb-line-straight {
+  display: inline-block;
+  float: left;
+  width: 85%;
+  height: 2px;
+  background-color: #e5127d;
+}
+
+.gb-line-curved {
+  display: inline-block;
+  float: left;
+  width: 10%;
+  height: 2px;
+  background-color: #e5127d;
+  transform-origin: left;
+  transform: rotate(60deg);
 }
 
 .gb-story {
