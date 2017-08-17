@@ -193,7 +193,6 @@ a {
 
 .story-text {
   display: inline-block;
-
   background-color: #000000;
   font-family: Adelle-sans, sans-serif;
   padding: 5px;
@@ -213,6 +212,47 @@ a {
 .story-author {
   color: #e5127d;
   cursor: pointer;
+}
+
+/* styling for sub-stories */
+
+.sub-stories-container {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #eeeeee;
+}
+
+.sub-story {
+  display: inline-block;
+  width: 100%;
+  background-color: #eeeeee;
+  border-top: 1px solid #e7e7e8;
+}
+
+.sub-story .story-img {
+  width: 35%;
+  background-color: #eeeeee;
+  padding: 5px 0;
+}
+
+.sub-story .story-text {
+  width: 65%;
+  background-color: #eeeeee;
+}
+
+.sub-story .story-header {
+  color: #424242;
+  font-size: 14.5px;
+}
+
+.sub-story .story-footer {
+  color: #6a6a6a;
+  font-size: 12px;
+}
+
+.sub-story a {
+  color: #e5127d;
 }
 
 /* styling for footer */
