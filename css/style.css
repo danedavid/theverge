@@ -250,6 +250,71 @@ a {
   font-size: 12px;
 }
 
+/* styling for guidebook */
+
+.guidebook {
+  display: inline-block;
+  width: 100%;
+  background-color: #222222;
+}
+
+.gb-header {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.gb-logo {
+  display: inline-block;
+}
+
+.gb-header img {
+  width: 110px;
+  height: 50px;
+}
+
+.gb-link {
+  position: absolute;
+  padding-right: inherit;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gb-link a {
+  color: #e5127d;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.gb-link .right-arrow-pink {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 5px;
+  border: 5px solid transparent;
+  border-left: 5px solid #e5127d;
+}
+
+.gb-story {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  background-color: #eeeeee;
+}
+
+.gb-story .story-img {
+  width: 35%;
+  background-color: inherit;
+  padding: 0;
+}
+
+.gb-story .story-text {
+  width: 65%;
+  background-color: inherit;
+}
+
 /* styling for footer */
 
 .footer {
