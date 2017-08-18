@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
+    <script src="script.js"></script>
     <div class="body-wrapper">
       <div class="header-wrapper">
         <div class="header-content">
@@ -23,34 +24,34 @@
         </div>
         <div class="nav-bar">
           <ul class="nav-ul">
-            <li class="nav-button">
-              <a href="#">
+            <li class="nav-button" onclick="viewNavSection('tech')">
+              <span class="nav-button-text">
                 TECH
                 <span class="down-arrow"></span>
-              </a>
+              </span>
             </li>
-            <li class="nav-button">
-              <a href="#">
+            <li class="nav-button" onclick="viewNavSection('science')">
+              <span class="nav-button-text">
                 SCIENCE
                 <span class="down-arrow"></span>
-              </a>
+              </span>
             </li>
-            <li class="nav-button">
-              <a href="#">
+            <li class="nav-button" onclick="viewNavSection('culture')">
+              <span class="nav-button-text">
                 CULTURE
                 <span class="down-arrow"></span>
-              </a>
+              </span>
             </li>
-            <li class="nav-button">
-              <a href="#">
+            <li class="nav-button" onclick="viewNavSection('more')">
+              <span class="nav-button-text">
                 MORE
                 <span class="down-arrow"></span>
-              </a>
+              </span>
             </li>
           </ul>
         </div>
       </div>
-      <div class="nav-section-coll">
+      <div id="nav-section-container" class="nav-section-coll">
         <div id="nav-section-tech" class="nav-section">
           <ul class="nav-section-ul">
             <li>
