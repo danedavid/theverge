@@ -92,7 +92,7 @@ a {
   border-left: 0;
 }
 
-.nav-bar .nav-button a {
+.nav-bar .nav-button .nav-button-text {
   position: relative;
   color: #ffffff;
   text-decoration: none;
