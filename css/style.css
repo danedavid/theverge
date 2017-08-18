@@ -512,6 +512,29 @@ a {
   .top-story .story-footer {
     font-size: 15px;
     letter-spacing: 1px;
+    position: relative;
+  }
+
+  .top-story .story-footer::after {
+    content: '';
+    width: 250px;
+    height: 3px;
+    background-color: #ffff00;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+  }
+
+  .top-story .story-footer::before {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #ffff00;
+    position: absolute;
+    top: 100%;
+    right: 150%;
+    transform-origin: right;
+    transform: rotate(-60deg);
   }
 
   .main-items-container {
