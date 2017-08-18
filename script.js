@@ -4,11 +4,11 @@
 var sectionOn = false;
 
 function viewNavSection(sectionId) {
-  let navSection;
-  let navColl = document.getElementById("nav-section-container");
-  let body = document.getElementsByTagName("body")[0];
+  var navSection;
+  var navColl = document.getElementById("nav-section-container");
+  var body = document.getElementsByTagName("body")[0];
 
-  let navSectionsArray = [].slice.call(document.getElementsByClassName("nav-section"));
+  var navSectionsArray = [].slice.call(document.getElementsByClassName("nav-section"));
   navSectionsArray.forEach( function (navElement) {
     navElement.style.display = "none";
   });
