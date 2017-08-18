@@ -495,3 +495,139 @@ a {
 .vox-links {
   max-width: 90vw;
 }
+
+/* media queries section  */
+
+@media ( min-width: 600px ) {
+  .top-story .story-text {
+    font-family: Heroic;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+
+  .top-story .story-header {
+    font-size: 52px;
+  }
+
+  .top-story .story-footer {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .main-items-container {
+    padding: 0;
+  }
+
+  .main-item {
+    width: calc(50% - 3px);
+    margin-top: 2px;
+  }
+
+  .main-item:nth-child(odd) {
+    float: left;
+    margin-left: 2px;
+  }
+
+  .main-item:nth-child(even) {
+    float: right;
+    margin-right: 2px;
+  }
+
+  .main-item:last-child {
+    display: inline-block;
+    width: calc(100% - 4px);
+    margin-bottom: 2px;
+  }
+
+  .main-item:last-child .story-text,
+  .main-item:last-child .story-img {
+    display: inline-block;
+    float: right;
+  }
+
+  .main-item:last-child .story-img {
+    width: 40%;
+  }
+
+  .main-item:last-child .story-text {
+    font-family: Heroic;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 60%;
+    height: auto;
+  }
+
+  .main-item:last-child .story-header {
+    font-size: 48px;
+  }
+
+  .main-item:last-child .story-footer {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .main-item .story-img {
+    display: block;
+    padding: 0;
+    float: none;
+    width: auto;
+  }
+
+  .main-item .story-text {
+    display: inline-block;
+    width: auto;
+    height: 100px;
+  }
+
+  .main-item .story-header {
+    font-size: 20px;
+  }
+
+  .main-item .story-footer {
+    font-size: 14px;
+    font-family: Heroic;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .sub-stories-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gb-story {
+    width: calc(50% - 5px);
+    float: left;
+  }
+
+  .gb-story:nth-child(odd) {
+    float: left;
+  }
+
+  .gb-story:nth-child(even) {
+    float: right;
+  }
+
+  .footer-logo,
+  .footer-verge,
+  .footer-vox {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+  }
+
+  .footer-logo {
+    width: 20%;
+  }
+
+  .footer-verge {
+    width: 40%;
+    text-align: left;
+  }
+
+  .footer-vox {
+    width: 40%;
+    text-align: right;
+  }
+}
