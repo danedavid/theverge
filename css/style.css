@@ -27,7 +27,6 @@ a {
 }
 
 .header-logo svg {
-  /*max-width: 150px;*/
   height: 25px;
   margin-left: 16px;
   margin-top: 10px;
@@ -71,7 +70,6 @@ a {
   border-bottom: 1px solid #333333;
 }
 
-
 .nav-bar .nav-ul {
   display: inline-block;
   width: 100%;
@@ -97,6 +95,10 @@ a {
   position: relative;
   color: #ffffff;
   text-decoration: none;
+}
+
+.nav-bar .nav-button-responsive {
+  display: none;
 }
 
 .down-arrow {
@@ -539,6 +541,23 @@ a {
     display: none;
   }
 
+  .nav-bar .nav-button {
+    width: 75px;
+    border: 0;
+  }
+
+  .nav-bar .nav-button-responsive {
+    display: inline-block;
+    float: right;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+
+  .nav-bar .nav-button-responsive svg {
+    width: 16px;
+    height: 16px;
+  }
+
   .top-story .story-text {
     font-family: Heroic;
     text-transform: uppercase;
@@ -658,16 +677,25 @@ a {
   }
 
   .footer-logo {
-    width: 20%;
+    width: 30%;
   }
 
   .footer-verge {
-    width: 40%;
+    width: 35%;
     text-align: left;
   }
 
   .footer-vox {
-    width: 40%;
+    width: 35%;
     text-align: right;
+  }
+
+  .footer-vox .vox-logo {
+    width: 220px;
+    float: right;
+  }
+
+  .footer-vox .vox-links {
+    clear: both;
   }
 }
