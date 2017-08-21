@@ -111,10 +111,14 @@ a {
   border-top: 4px solid #e5127d;
 }
 
+.nav-button-extra {
+  display: none;
+}
+
 .nav-section-coll {
   display: none;
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(100vh - 80px);
   position: fixed;
 }
 
@@ -219,6 +223,10 @@ a {
 
 .story-author {
   color: #e5127d;
+}
+
+.main-items-container .quote-section {
+  display: none;
 }
 
 /* styling for sub-stories */
@@ -546,6 +554,10 @@ a {
     border: 0;
   }
 
+  .nav-bar .nav-button-extra {
+    display: inline-block;
+  }
+
   .nav-bar .nav-button-responsive {
     display: inline-block;
     float: right;
@@ -592,23 +604,23 @@ a {
     margin-right: 2px;
   }
 
-  .main-item:last-child {
+  .main-item:nth-last-child(2) {
     display: inline-block;
     width: calc(100% - 4px);
     margin-bottom: 2px;
   }
 
-  .main-item:last-child .story-text,
-  .main-item:last-child .story-img {
+  .main-item:nth-last-child(2) .story-text,
+  .main-item:nth-last-child(2) .story-img {
     display: inline-block;
     float: right;
   }
 
-  .main-item:last-child .story-img {
+  .main-item:nth-last-child(2) .story-img {
     width: 40%;
   }
 
-  .main-item:last-child .story-text {
+  .main-item:nth-last-child(2) .story-text {
     font-family: Heroic;
     text-transform: uppercase;
     padding: 15px;
@@ -616,11 +628,11 @@ a {
     height: auto;
   }
 
-  .main-item:last-child .story-header {
+  .main-item:nth-last-child(2) .story-header {
     font-size: 48px;
   }
 
-  .main-item:last-child .story-footer {
+  .main-item:nth-last-child(2) .story-footer {
     font-size: 15px;
     letter-spacing: 1px;
   }
@@ -648,6 +660,21 @@ a {
     font-weight: bold;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+  }
+
+  .main-items-container .quote-section {
+    display: inline-block;
+    background-color: transparent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .main-items-container .quote-section * {
+    color: #000000;
+  }
+
+  .main-items-container .quote-section .quote-text {
+    font-size: 50px;
   }
 
   .sub-stories-container {
@@ -713,13 +740,15 @@ a {
 
   /* hover for story headers */
   .story-header,
-  .gb-story .story-text {
+  .gb-story .story-text,
+  .quote-text {
     transition: color 0.2s;
     cursor: pointer;
   }
 
   .story-header:hover,
-  .gb-story .story-text:hover {
+  .gb-story .story-text:hover,
+  .quote-text:hover {
     color: #b60e63;
   }
 }
