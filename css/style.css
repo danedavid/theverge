@@ -68,6 +68,7 @@ a {
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #333333;
+  background-color: #000000;
 }
 
 .nav-bar .nav-ul {
@@ -750,5 +751,65 @@ a {
   .gb-story .story-text:hover,
   .quote-text:hover {
     color: #b60e63;
+  }
+}
+
+@media ( min-width: 1000px) {
+  .body-wrapper {
+    background-color: #ffffff;
+  }
+
+  .sub-stories-container,
+  .guidebook,
+  .more-stories,
+  .quote-section {
+    width: 80%;
+    margin-left: 10vw;
+  }
+
+  .sub-stories-container .sub-story {
+    width: 70%;
+  }
+
+  .sub-stories-container .aside {
+    float: right;
+    height: 600px;
+    width: 26%;
+  }
+
+  .aside .circuit-breaker-container {
+    border-top: 2px solid #000066;
+    border-right: 2px solid #000066;
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .aside .circuit-breaker-container::after {
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: #000066;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    transform-origin: left;
+    transform: rotate(-120deg);
+  }
+
+  .circuit-breaker-container > .gb-story {
+    width: 100%;
+    float: none;
+    background-color: inherit;
+  }
+
+  .circuit-breaker-container > .gb-story .story-img {
+    width: 100%;
+  }
+
+  .circuit-breaker-container > .gb-story .story-text {
+    width: 100%;
   }
 }
