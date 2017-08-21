@@ -239,6 +239,10 @@ a {
   background-color: #ffffff;
 }
 
+.aside {
+  display: none;
+}
+
 .sub-story {
   display: inline-block;
   width: 100%;
@@ -762,7 +766,7 @@ a {
   .sub-stories-container,
   .guidebook,
   .more-stories,
-  .quote-section {
+  .quote-section, {
     width: 80%;
     margin-left: 10vw;
   }
@@ -772,6 +776,7 @@ a {
   }
 
   .sub-stories-container .aside {
+    display: inline-block;
     float: right;
     height: 600px;
     width: 26%;
