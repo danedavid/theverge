@@ -27,7 +27,7 @@ a {
 }
 
 .header-logo svg {
-  max-width: 150px;
+  /*max-width: 150px;*/
   height: 25px;
   margin-left: 16px;
   margin-top: 10px;
@@ -501,6 +501,44 @@ a {
 /* media queries section  */
 
 @media ( min-width: 600px ) {
+
+  .header-content {
+    background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7383215/Masthead_DB_1.0.png");
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+    position: relative;
+  }
+
+  .header-content .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+  }
+
+  .header-content .header-logo::after {
+    content: 'MONDAY, AUGUST 21, 2017 | SANJOG';
+    font-family: Heroic;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .header-logo svg {
+    margin: 0;
+    max-width: 95vw;
+    height: 120px;
+  }
+
+  .header-content .user-login {
+    display: none;
+  }
+
   .top-story .story-text {
     font-family: Heroic;
     text-transform: uppercase;
