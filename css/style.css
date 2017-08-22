@@ -843,6 +843,14 @@ a {
     width: calc(33.33% - 4px);
   }
 
+  .main-item:nth-child(n+5):nth-child(-n+7) .story-img {
+    height: 75%;
+  }
+
+  .main-item:nth-child(n+5):nth-child(-n+7) .story-img img {
+    height: 100%;
+  }
+
   .main-item:nth-child(n+5):nth-child(-n+7) .story-author {
     display: inline-block !important;
   }
