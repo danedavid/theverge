@@ -458,6 +458,7 @@ a {
   font-family: sans-serif;
   font-size: 13px;
   color: #ffffff;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -759,27 +760,36 @@ a {
 }
 
 @media ( min-width: 1000px) {
+
   .body-wrapper {
     background-color: #ffffff;
   }
 
   .sub-stories-container,
   .guidebook,
-  .more-stories,
-  .quote-section, {
-    width: 80%;
-    margin-left: 10vw;
-  }
-
-  .sub-stories-container .sub-story {
+  .quote-section {
     width: 70%;
+    margin-left: 5vw;
   }
 
-  .sub-stories-container .aside {
+  .more-stories {
+    width: 91%;
+    margin-left: 5vw;
+  }
+
+  .guidebook {
+    background-color: #444444;
+  }
+
+  .aside {
     display: inline-block;
     float: right;
-    height: 600px;
-    width: 26%;
+    width: 21%;
+    background-color: #ffffff;
+    margin-right: 2vw;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
   }
 
   .aside .circuit-breaker-container {
@@ -804,17 +814,41 @@ a {
     transform: rotate(-120deg);
   }
 
-  .circuit-breaker-container > .gb-story {
+  .circuit-breaker-container .gb-story {
     width: 100%;
     float: none;
     background-color: inherit;
   }
 
-  .circuit-breaker-container > .gb-story .story-img {
+  .circuit-breaker-container .gb-story .story-img {
     width: 100%;
   }
 
-  .circuit-breaker-container > .gb-story .story-text {
+  .circuit-breaker-container .gb-story .story-text {
     width: 100%;
+  }
+
+  .circuit-breaker-more {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-family: Heroic;
+    font-size: 15px;
+    color: #e5127d;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border-bottom: 2px solid #000066;
+  }
+
+  .circuit-breaker-more::after {
+    content: '';
+    height: 20px;
+    width: 2px;
+    background-color: #000066;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom;
+    transform: rotate(30deg);
   }
 }
