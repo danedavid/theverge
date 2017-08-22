@@ -730,8 +730,17 @@ a {
     padding: 0 10px;
   }
 
+  .footer {
+    display: table;
+    width: 100%;
+  }
+
   .footer-logo {
     width: 30%;
+  }
+
+  .footer-logo svg {
+    max-width: 300px;
   }
 
   .footer-verge {
