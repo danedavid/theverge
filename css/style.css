@@ -177,6 +177,10 @@ a {
   margin-top: 1px;
 }
 
+.main-item-extra {
+  display: none;
+}
+
 .top-story .story-img {
   width: 50%;
 }
@@ -600,6 +604,11 @@ a {
     margin-top: 2px;
   }
 
+  .main-item-extra,
+  .main-item-extra * {
+    display: none !important;
+  }
+
   .main-item:nth-child(odd) {
     float: left;
     margin-left: 2px;
@@ -765,11 +774,89 @@ a {
     background-color: #ffffff;
   }
 
+  .main-items-container .top-story,
+  .main-items-container .main-item {
+    height: 370px;
+    float: left;
+    margin: 2px 0 0 2px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .top-story .story-img,
+  .top-story .story-img img,
+  .main-item:nth-child(4) .story-img,
+  .main-item:nth-child(4) .story-img img,
+  .main-item:nth-child(8) .story-img,
+  .main-item:nth-child(8) .story-img img {
+    height: inherit;
+    padding: 0;
+  }
+
+  .top-story {
+    width: 70%;
+    display: inline-block;
+  }
+
+  .main-item-extra,
+  .main-item-extra * {
+    display: block !important;
+  }
+
+  .main-item:nth-child(2) {
+    width: calc(30% - 6px);
+    float: left;
+    display: inline-block;
+  }
+
+  .main-item:nth-child(3) {
+    width: 30%;
+  }
+
+  .main-item:nth-child(4) {
+    width: calc(70% - 6px);
+  }
+
+  .main-item:nth-child(4) .story-img {
+    width: 50%;
+    float: right;
+  }
+
+  .main-item:nth-child(4) .story-text {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .main-item:nth-child(4) .story-text .story-header {
+    font-size: 52px;
+    font-family: Heroic;
+    text-transform: uppercase;
+  }
+
+  .main-item:nth-child(n+5):nth-child(-n+6) {
+    width: calc(33.33% - 2px);
+  }
+
+  .main-item:nth-child(7) {
+    width: calc(33.33% - 4px);
+  }
+
+  .main-item:nth-child(n+5):nth-child(-n+7) .story-author {
+    display: inline-block !important;
+  }
+
   .sub-stories-container,
   .guidebook,
   .quote-section {
     width: 70%;
     margin-left: 5vw;
+  }
+
+  .main-items-container .quote-section {
+    margin: 0;
+    width: 100%;
   }
 
   .more-stories {
