@@ -43,6 +43,7 @@ a {
 .header-wrapper {
   display: inline-block;
   width: 100%;
+  position: relative;
 }
 .header-content {
   display: inline-block;
@@ -119,8 +120,12 @@ a {
 .nav-section-coll {
   display: none;
   width: 100%;
-  height: calc(100vh - 80px);
-  position: fixed;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 1000;
 }
 
 .nav-section {
@@ -132,6 +137,10 @@ a {
   right: 0;
   background-color: #1a1a1a;
   color: #ffffff;
+}
+
+.nav-section .nav-section-ul {
+  list-style-type: none;
 }
 
 .nav-section .nav-section-ul li {
